@@ -1,0 +1,81 @@
+<!doctype html>
+<html class="min-w-full bg-white font-sans text-black">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Welsh or C?</title>
+        <link href="src/output.css" rel="stylesheet" />
+    </head>
+    <body class="px-4 text-center">
+        <main class="m-auto w-full text-xl md:w-4/5">
+            <h1 class="m-4 text-5xl font-bold">
+                Welsh or C standard library function?
+            </h1>
+            <h2 id="word"></h2>
+            <div class="flex justify-center">
+                <button
+                    id="welsh"
+                    class="m-4 min-w-32 bg-blue-500 p-2 text-white"
+                >
+                    Welsh
+                </button>
+                <button id="c" class="m-4 min-w-32 bg-red-500 p-2 text-white">
+                    C
+                </button>
+            </div>
+            <table
+                id="table"
+                class="m-auto table text-center font-sans md:text-2xl"
+            >
+                <tr id="correct">
+                    <td>Correct</td>
+                    <td class="stat">0</td>
+                </tr>
+                <tr id="wrong">
+                    <td>Wrong</td>
+                    <td class="stat">0</td>
+                </tr>
+                <tr id="total">
+                    <td>Total</td>
+                    <td class="stat">0</td>
+                </tr>
+                <tr id="percent">
+                    <td>Percent Correct</td>
+                    <td class="stat">0%</td>
+                </tr>
+                <tr id="streak">
+                    <td>Streak</td>
+                    <td class="stat">0</td>
+                </tr>
+                <tr id="longestStreak">
+                    <td>Longest Streak</td>
+                    <td class="stat">0</td>
+                </tr>
+            </table>
+        </main>
+        <footer class="font-sans">
+            <p>
+                Inspired by
+                <a
+                    class="underline"
+                    target="_blank"
+                    href="https://www.reddit.com/r/ProgrammerHumor/comments/1f123qw/letsplayagame/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button"
+                >
+                    this Reddit post
+                </a>
+            </p>
+            <p>
+                <a
+                    class="mt-8 underline"
+                    href="https://github.com/renaissancedog/welsh-or-c"
+                    target="_blank"
+                    >Star or fork</a
+                >
+                this repo.
+            </p>
+            <p class="mt-2">Made with ❤️ by William, 2025</p>
+        </footer>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.slim.min.js"></script>
+    <script type="module" src="src/main.js"></script>
+</html>
